@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@keyframes olhoesquerdo {
+    from { left: 20%;}
+    to { left: 35%; background-color: deepskyblue;  }
+}
+@keyframes olhodireito {
+    from { right: 20%;}
+    to { right: 35%; background-color: deepskyblue; }
+}
+@keyframes lingua {
+    from { height: 30px;}
+    50% { width : 70px;}
+    to { height: 100px; width : 70px;}
+}
+@keyframes bocafechada {
+    from { height: 100px;}
+    25% {height: 80px;}
+    50% {height: 50px;}
+    75% {height: 40px;}
+    to {height: 30px;}
+}
+.container-box{
+    position: relative;
+    height: 70vh;
+}
+.box-container{
+    background-color: black;
+    height: 40vh;
+    width: 35vw;
+    position: absolute;
+    left:35%;
+    top: 10%;
+    box-shadow: 5px 5px 15px 5px #757575;
+    border-radius: 10px 10px;
+    
+}
+.container{
+    border: 0.5px solid #d2d2d2;
+    width: 35vw;
+    height: 62vh;
+    border-radius: 50%;
+    background-color: deeppink;
+    position: relative;
+    transform: translate(100%,25%);
+    box-shadow: 5px 5px 15px 5px #757575;
+    animation: movimenta 3s infinite;
+}
+.box-eye-one{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: 30%;
+    left: 15%;
+}
+.box-eye-two{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: 10%;
+    left:60%; 
+}
+.box-eye-left{
+    width: 60px;
+    height: 60px;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    top:25%;
+    left: 20%;
+    animation: olhoesquerdo 4s infinite;
+}
+.box-eye-right{
+    width: 60px;
+    height: 60px;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    animation: olhodireito 4s infinite;
+}
+.mouth{
+    background-color: black;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px 10px 500px 500px;
+    animation: bocafechada 3s infinite;
+}
+.tongue{
+    background-color: red;
+    height: 30px;
+    width: 50px;
+    border-radius: 10px 10px 50px 50px;
+    position: absolute;
+    top: 55%;
+    left:50%;
+    transform: translateX(-50%);
+    animation: lingua 3s infinite;
+}
